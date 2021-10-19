@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculator</title>
+    <link href="dark.css" rel="stylesheet" type="text/css" />
+    <link href="ripple_button2.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/d5fa852aeb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="theme-container">
+      <button class="toggler">
+        <a href="../index.html"><i class="i fa fa-moon"></i></a>
+      </button>
+    </div>
+    <div class="container">
+      <div class="card">
+        <input
+          type="text"
+          name="text"
+          class="display"
+          placeholder="0"
+          disabled
+        />
+
+        <div class="button-group">
+          <button
+            class="ripple btn num"
+            onclick="document.querySelector('.display').value=''"
+          >
+            C
+          </button>
+          <button
+            class="ripple btn num"
+            onclick="document.querySelector('.display').value=document.querySelector('.display').value.slice(0, document.querySelector('.display').value.length-1)"
+          >
+            <i class="fa fa-backspace"></i>
+          </button>
+          <button
+            class="ripple btn num"
+            onclick="document.querySelector('.display').value += '%'"
+          >
+            %
+          </button>
+          <button
+            class="ripple btn num"
+            onclick="document.querySelector('.display').value += '/'"
+          >
+            ÷
+          </button>
+        </div>
+        <div class="button-group">
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '9'"
+          >
+            9
+          </button>
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '8'"
+          >
+            8
+          </button>
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '7'"
+          >
+            7
+          </button>
+          <button
+            class="ripple btn num"
+            onclick="document.querySelector('.display').value += '*'"
+          >
+            ×
+          </button>
+        </div>
+        <div class="button-group">
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '6'"
+          >
+            6
+          </button>
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '5'"
+          >
+            5
+          </button>
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '4'"
+          >
+            4
+          </button>
+          <button
+            class="ripple btn num"
+            onclick="document.querySelector('.display').value += '-'"
+          >
+            -
+          </button>
+        </div>
+        <div class="button-group">
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '3'"
+          >
+            3
+          </button>
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '2'"
+          >
+            2
+          </button>
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '1'"
+          >
+            1
+          </button>
+          <button
+            class="ripple btn num"
+            onclick="document.querySelector('.display').value += '+'"
+          >
+            +
+          </button>
+        </div>
+        <div class="button-group">
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '0'"
+          >
+            0
+          </button>
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '00'"
+          >
+            00
+          </button>
+          <button
+            class="ripple btn"
+            onclick="document.querySelector('.display').value += '.'"
+          >
+            .
+          </button>
+          <button class="ripple btn equal">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

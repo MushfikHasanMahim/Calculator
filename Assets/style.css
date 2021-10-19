@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.container {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  width: 300px;
+  height: 430px;
+  margin-top: 18%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 6px 6px 33px #bababa, -6px -6px 33px #ffffff;
+}
+body {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  flex-direction: column;
+}
+.btn {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 6px 6px 22px #bababa, -6px -6px 22px #ffffff;
+  color: #161623;
+  font-size: 18px;
+}
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.display {
+  width: 240px;
+  height: 40px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 32px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px #e3e3e3, -6px -6px 15px #ffffff;
+  color: #161623;
+  text-align: right;
+}
+.num {
+  color: orange;
+}
+.equal {
+  background: orange;
+  color: white;
+}
+.theme-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.toggler {
+  width: 60px;
+  height: 30px;
+  border: none;
+  background: #161623;
+  border-radius: 50px;
+  padding: 0px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border: 2px solid #fff;
+}
+.i {
+  padding: 4px;
+  color: black;
+  background: white;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .container {
+    margin-top: 9%;
+  }
+}
+
+@media only screen and (max-width: 333px) {
+  .container {
+    max-width: 220px;
+    height: 350px;
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+  }
+  .display {
+    width: 190px;
+    height: 24px;
+    margin-left: 5px;
+  }
+}
